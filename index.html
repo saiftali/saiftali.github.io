@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Star Wars</title>
+  <title>Star Wars Force Simulator</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +13,35 @@
   body {
       position: relative; 
   }
+  @font-face{
+  font-family:"serif-gothic";
+  src:url('serifgothicbold.ttf') format('truetype');
+  
+  }
+  #abouthead{
+  font-size:100%;
+  font-family: serif-gothic;
+  }
+  #gethead{
+  font-size:100%;
+  font-family: serif-gothic;
+  }
+  .navbar{
+  font-size:100%;
+  font-family: serif-gothic;
+  }
   #home {padding-top:50px;height:700px;}
   #getstarted {padding-top:50px;height:700px;}
-  #about {padding-top:50px;height:1300px;}
+  #about {padding-top:50px;height:1200px;}
    #home.container-fluid{
-    background:url(stars.jpg);
+    background:url(images/stars.jpg);
     background-size:1500px 700px;
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
     }
     #getstarted.container-fluid{
-    background:url(backg.jpg);
+    background:url(images/backg.jpg);
     background-size:1500px 700px;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -33,7 +50,7 @@
     }
     #about.container-fluid{
     background-color:#43413B;
-    background-size:1500px 1300px;
+    background-size:1500px 1200px;
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
@@ -45,6 +62,7 @@
     }
     #information{
     text-align:justify;
+    
     }
     #abouthead{
     font-size:60px;
@@ -61,17 +79,19 @@
 div.transbox{
 margin-right:550px;
 margin-left:90px;
-background-color:#ffffff;
+
 border: 1 px solid black;
-opacity: 0.6;
+opacity: 1;
+z-index: -1;
 
 }
 div.transbox p{
 margin: 5%;
 font-weight: bold;
  color:#000000;
- 
+ z-index:-1;
 }
+
 
 
 
@@ -177,7 +197,7 @@ top:2430px;
       </button>
       <a class="navbar-brand" href="#home">
      
-      Star Wars</a>
+      Star Wars Force Simulator</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -196,17 +216,19 @@ top:2430px;
   </div>
 </nav> 
 <div id="home" class="container-fluid">
-<img src="starwarstext.png" style="width:1300px;height:600px;margin-top:20px">
+<img src="images/starwarstext.png" style="width:1300px;height:600px;margin-top:20px">
 
 </div>
 <div class="container-fluid" id="getstarted">
 <h1  align="center" id="gethead"><font color="#FFD105">Getting Started</font></h1>
-<img src="Combined.png" align="right" style="height:464px;width:226px;margin-right:75px;" >
+<img src="images/combined.png" align="right" style="height:464px;width:226px;margin-right:75px;" >
 <div class="transbox">
 <p align="left" id="information" style="margin-top:60px;"><font size="6" color="#FFD105">This app allows for fun physics simulations to be represented
  by Star Wars characters. You can utilize the Force to destroy baddies,
 escape the velocities of different planets and see ship collisions.</font></p>
 </div>
+
+
 
 </div>
 <div class="container-fluid" id="about">
@@ -216,29 +238,124 @@ escape the velocities of different planets and see ship collisions.</font></p>
 <p style="margin-left:610px;margin-top:15px;"id="rcorners4" ></p>
 
 <div class="zoom" id="joshc">
-<img src="josh.jpg" style="height:200px;width:230px" align="left"  id="josh" class="image">
+<img src="images/josh.jpg" style="height:200px;width:230px" align="left"  id="josh" class="image" data-toggle="modal" data-target="#myModal" >
 </div>
 <p id="joshcaption"><font color="#FFD105">Josh Zhou</font></p>
 <div class="zoom" id="jfc">
-<img src="jiangfeng.jpg" style="height:200px;width:230px;" align="left"  id="jiangfeng" class="image">
+<img src="images/jiangfeng.jpg" style="height:200px;width:230px;" align="left"  id="jiangfeng" class="image" data-toggle="modal" data-target="#myModal2" >
 </div>
 <p id="jfccaption"><font color="#FFD105">Jiangfeng Chu</font></p>
 <div class="zoom" id="anc">
-<img src="anchey.jpg" style="height:200px;width:230px;" align="left"  id="anchey" class="image">
+<img src="images/anchey.jpg" style="height:200px;width:230px;" align="left"  id="anchey" class="image" data-toggle="modal" data-target="#myModal3">
 </div>
 <p id="ancheycaption"><font color="#FFD105">Anchey Peng</font></p>
 <div class="zoom" id="aks">
-<img src="akshana.jpg" style="height:200px;width:230px;" align="left"  id="akshana" class="image">
+<img src="images/akshana.jpg" style="height:200px;width:230px;" align="left"  id="akshana" class="image"data-toggle="modal" data-target="#myModal5">
 </div>
 <p id="akshanacaption"><font color="#FFD105">  Akshana</font></p>
 <p id="akshana2caption"><font color="#FFD105"> Dassanaike</font></p>
 <div class="zoom" id="saifc">
-<img src="saif.jpg" style="height:200px;width:230px;" align="left"  id="saif" class="image">
+<img src="images/saif.jpg" style="height:200px;width:230px;" align="left"  id="saif" class="image" data-toggle="modal" data-target="#myModal4">
 </div>
 <p id="saifcaption"><font color="#FFD105">Saif Ali</font></p>
+<div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><font color="#000000">Programmer, Designer</font></h4>
+      </div>
+      <div class="modal-body">
+        <p><font color="#000000">Josh loves to code, run, and play basketball in his freetime. He also participates in Computer Club, Model UN, Cross Country, Key Club, and Track and Field. He can code proficiently in Java, HTML, CSS, and C. He also completed the LEAP Summer Camp.</font></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div id="myModal2" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><font color="#000000">Programmer</font></h4>
+      </div>
+      <div class="modal-body">
+        <p><font color="#000000">Jiangfeng Chu is a sophomore at North Allegheny Intermediate High School. His favorite hobbies are skiing, coding, and 
+playing badminton. Jiangfeng participated in the LEAP summer program at Carnegie Mellon University, and his favorite 
+language is Java</font></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
+<div id="myModal3" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><font color="#000000">Designer</font></h4>
+      </div>
+      <div class="modal-body">
+        <p><font color="#000000">Anchey Peng is a sophomore at North Allegheny Intermediate High School. He enjoys coding, computers, and graphic design. He is currently enrolled in the AP Computer Science Principles course and is learning a lot about the C language.</font></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div id="myModal4" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><font color="#000000">Programmer</font></h4>
+      </div>
+      <div class="modal-body">
+        <p><font color="#000000">Saif Ali is a sophomore at North Allegheny Intermediate High School. He plays soccer for the school team and enjoys it very much. He also enjoys coding, and has taken several computer science courses over the summer. His favorite language is Python, and enjoys learning new languages. </font></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div id="myModal5" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><font color="#000000">Programmer, Designer</font></h4>
+      </div>
+      <div class="modal-body">
+        <p><font color="#000000">Akshana Dassanaike is a sophomore at North Allegheny Intermediate High School. He is on the school’s water polo team, and is very dedicated to the game. He is also dedicated to the school’s Speech and Debate team in which he participates in the Lincoln Douglas Debate. Coding is also one of his favorite hobbies, specifically Android app development. </font></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
 <script>
   //SMOOTHSCROLLING
 
