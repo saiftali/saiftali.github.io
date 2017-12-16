@@ -15,7 +15,7 @@
   }
   #home {padding-top:50px;height:700px;}
   #getstarted {padding-top:50px;height:700px;}
-  #about {padding-top:50px;height:700px;}
+  #about {padding-top:50px;height:1300px;}
    #home.container-fluid{
     background:url(stars.jpg);
     background-size:1500px 700px;
@@ -24,8 +24,16 @@
     background-position:center;
     }
     #getstarted.container-fluid{
-    background-color:black;
+    background:url(backg.jpg);
     background-size:1500px 700px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    
+    }
+    #about.container-fluid{
+    background-color:#43413B;
+    background-size:1500px 1300px;
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
@@ -38,7 +46,123 @@
     #information{
     text-align:justify;
     }
+    #abouthead{
+    font-size:60px;
+    }
+    #rcorners4 {
+    border-radius: 5px;
+    background: #73AD21;
+    padding: 5px; 
+    width: 100px;
+    height: 1px; 
+    justify-content:center;
     
+} 
+div.transbox{
+margin-right:550px;
+margin-left:90px;
+background-color:#ffffff;
+border: 1 px solid black;
+opacity: 0.6;
+
+}
+div.transbox p{
+margin: 5%;
+font-weight: bold;
+ color:#000000;
+ 
+}
+
+
+
+
+
+.zoom {
+ 
+    
+    
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+ 
+  
+   
+  
+}
+
+.zoom:hover {
+   
+    transform: scale(1.2); 
+}
+#joshc{
+position:absolute;
+left:100px;
+top:1850px;
+
+}
+#jfc{
+position:absolute;
+left:550px;
+top:1850px;
+
+
+}
+#anc{
+position:absolute;
+left:1000px;
+top:1850px;
+
+
+}
+#aks{
+position:absolute;
+left:300px;
+top:2200px;
+}
+#saifc{
+position:absolute;
+left:750px;
+top:2200px;
+}
+#joshcaption{
+position:absolute;
+left:150px;
+top:2080px;
+
+}
+#jfccaption{
+position:absolute;
+left:580px;
+top:2080px;
+
+}
+#ancheycaption{
+position:absolute;
+left:1045px;
+top:2080px;
+
+}
+
+#akshanacaption{
+position:absolute;
+left:365px;
+top:2430px;
+
+}
+#akshana2caption{
+position:absolute;
+left:347px;
+top:2465px;
+
+}
+#saifcaption{
+position:absolute;
+left:820px;
+top:2430px;
+
+}
+
   </style>
  </head>
  <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -73,14 +197,46 @@
 </nav> 
 <div id="home" class="container-fluid">
 <img src="starwarstext.png" style="width:1300px;height:600px;margin-top:20px">
-<!-->insert video<-->
+
 </div>
 <div class="container-fluid" id="getstarted">
 <h1  align="center" id="gethead"><font color="#FFD105">Getting Started</font></h1>
-<p align="left" id="information"><font size="6" color="#FFD105">This app allows for fun physics<br /> simulations to be represented
-<br /> by Star Wars characters. You can utilize<br /> the Force to destroy baddies,
-<br />escape the velocities of different planets,<br /> and see ship collisions.</font></p>
-<img src="Combined.png" align="right" style="width:400px;height:150px;margin-right:70px;margin-top:100px;">
+<img src="combined.png" align="right" style="height:464px;width:226px;margin-right:75px;" >
+<div class="transbox">
+<p align="left" id="information" style="margin-top:60px;"><font size="6" color="#FFD105">This app allows for fun physics simulations to be represented
+ by Star Wars characters. You can utilize the Force to destroy baddies,
+escape the velocities of different planets and see ship collisions.</font></p>
+</div>
+
+</div>
+<div class="container-fluid" id="about">
+<h1  align="center" id="abouthead"><font color="#FFD105">About Us</font></h1>
+<p style="margin-left:610px;margin-top:50px;"id="rcorners4" ></p>
+<p align="center"><font size="5"color="#FFD105">We are a group of sophomores from North Allegheny Intermediate High School with a joint interest in computer science. Our team wanted to create an educational app aiming to teach young children basic physics concepts. The "Star Wars: The Force Simulator" app represents our efforts to meet this objective. We hope you enjoy using our app!</p>
+<p style="margin-left:610px;margin-top:15px;"id="rcorners4" ></p>
+
+<div class="zoom" id="joshc">
+<img src="josh.jpg" style="height:200px;width:230px" align="left"  id="josh" class="image">
+</div>
+<p id="joshcaption"><font color="#FFD105">Josh Zhou</font></p>
+<div class="zoom" id="jfc">
+<img src="jiangfeng.jpg" style="height:200px;width:230px;" align="left"  id="jiangfeng" class="image">
+</div>
+<p id="jfccaption"><font color="#FFD105">Jiangfeng Chu</font></p>
+<div class="zoom" id="anc">
+<img src="anchey.jpg" style="height:200px;width:230px;" align="left"  id="anchey" class="image">
+</div>
+<p id="ancheycaption"><font color="#FFD105">Anchey Peng</font></p>
+<div class="zoom" id="aks">
+<img src="akshana.jpg" style="height:200px;width:230px;" align="left"  id="akshana" class="image">
+</div>
+<p id="akshanacaption"><font color="#FFD105">  Akshana</font></p>
+<p id="akshana2caption"><font color="#FFD105"> Dassanaike</font></p>
+<div class="zoom" id="saifc">
+<img src="saif.jpg" style="height:200px;width:230px;" align="left"  id="saif" class="image">
+</div>
+<p id="saifcaption"><font color="#FFD105">Saif Ali</font></p>
+
 </div>
 
 <script>
