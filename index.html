@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Star Wars: The Force Simulator</title>
+  <title>Star Wars Force Simulator</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +18,17 @@
   src:url('serifgothicbold.ttf') format('truetype');
   
   }
+  .col-sm-3{
+  padding-top:25px;
+  
+  }
+  hr{
+	border-width: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 70px;
+	border-color: #8FF568;
+}
   #abouthead{
   font-size:100%;
   font-family: serif-gothic;
@@ -30,78 +41,69 @@
   font-size:100%;
   font-family: serif-gothic;
   }
-  #home {padding-top:50px;height:700px;}
-  #getstarted {padding-top:50px;height:700px;}
-  #about {padding-top:50px;height:1200px;}
+  #home {height:100vh}
+  
+  #getstarted {}
+  #about {}
    #home.container-fluid{
-    background:url(stars.jpg);
-    background-size:1500px 700px;
+    background:url(thisbetterwork.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    background-position:center;
+    }
+	#getstarted.container-fluid{
+	background:url(backg.jpg);
+    background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
-    }
-    #getstarted.container-fluid{
-    background:url(backg.jpg);
-    background-size:1500px 700px;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-    
-    }
-    #about.container-fluid{
-    background-color:#43413B;
-    background-size:1500px 1200px;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-    
-    }
-    
-    #gethead{
-    font-size:50px;
-    }
-    #information{
-    text-align:justify;
-    
-    }
-    #abouthead{
-    font-size:60px;
-    }
-    #rcorners4 {
-    border-radius: 5px;
-    background: #73AD21;
-    padding: 5px; 
-    width: 100px;
-    height: 1px; 
-    justify-content:center;
-    
-} 
-div.transbox{
-margin-right:550px;
-margin-left:90px;
+	
+	}
+	#about.container-fluid{
+	background-color:#43413B;
+   
+	
+	}
+	#foot.container-fluid{
+	background-color: #2f2f2f;
+	color: #ffffff;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+font-size:100%;
+  font-family: serif-gothic;
+ 
+	
+	}
+	
+	#gethead{
+	font-size:50px;
+	padding-top:50px;
+	}
+	#information{
+	padding-top:30px;
+	
+	}
+	#abouthead{
+	font-size:60px;
+	padding-top:50px;
+	}
+	
 
-border: 1 px solid black;
-opacity: 1;
-z-index: -1;
 
+
+#starwarstext{
+padding-top:75px;
 }
-div.transbox p{
-margin: 5%;
-font-weight: bold;
- color:#000000;
- z-index:-1;
-}
-
-
-
-
 
 
 .zoom {
  
+    display: block;
+    margin: auto;
     
-    
-    background-color: green;
     transition: transform .2s;
     width: 200px;
     height: 200px;
@@ -115,71 +117,25 @@ font-weight: bold;
    
     transform: scale(1.2); 
 }
-#joshc{
-position:absolute;
-left:100px;
-top:1850px;
 
-}
-#jfc{
-position:absolute;
-left:550px;
-top:1850px;
-
-
-}
-#anc{
-position:absolute;
-left:1000px;
-top:1850px;
-
-
-}
-#aks{
-position:absolute;
-left:300px;
-top:2200px;
-}
-#saifc{
-position:absolute;
-left:750px;
-top:2200px;
-}
 #joshcaption{
-position:absolute;
-left:150px;
-top:2080px;
+padding-top:25px;
 
 }
-#jfccaption{
-position:absolute;
-left:580px;
-top:2080px;
+#jfcaption{
+padding-top:25px;
 
 }
 #ancheycaption{
-position:absolute;
-left:1045px;
-top:2080px;
+padding-top:25px;
 
 }
-
 #akshanacaption{
-position:absolute;
-left:365px;
-top:2430px;
-
-}
-#akshana2caption{
-position:absolute;
-left:347px;
-top:2465px;
+padding-top:25px;
 
 }
 #saifcaption{
-position:absolute;
-left:820px;
-top:2430px;
+padding-top:25px;
 
 }
 
@@ -197,7 +153,7 @@ top:2430px;
       </button>
       <a class="navbar-brand" href="#home">
      
-      Star Wars: The Force Simulator</a>
+      Star Wars Force Simulator</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -216,46 +172,93 @@ top:2430px;
   </div>
 </nav> 
 <div id="home" class="container-fluid">
-<img src="starwarstext.png" style="width:1300px;height:600px;margin-top:20px">
-<h5><font color="#FFD105"> A new update to the website will be coming soon! Stay tuned.</font></h5>
+
+
+
 </div>
 <div class="container-fluid" id="getstarted">
-<h1  align="center" id="gethead"><font color="#FFD105">Getting Started</font></h1>
-<img src="Combined.png" align="right" style="height:464px;width:226px;margin-right:75px;" >
-<div class="transbox">
-<p align="left" id="information" style="margin-top:60px;"><font size="6" color="#FFD105">Our app simulates several physics concepts including forces, escape velocity, and collisions. To captivate the interest of children using our app, we utilized Star Wars characters, ships, and planets as sprites.</font></p>
+<div class="row">
+<div class="col-sm-4"></div>
+
+<div class="text-center col-sm-4">
+<h1   id="gethead"><font color="#FFD105">Getting Started</font></h1>
 </div>
 
+</div>
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-6 text-center">
+
+<p  style="padding-top:50px" ><font size="6" color="#FFD105">Our app simulates several physics concepts including forces, escape velocity, and collisions.
+ To captivate the interest of children using our app, we utilized Star Wars characters, ships, and planets as sprites.</font></p>
+</div>
+<div class="col-sm-2"></div>
+<div class="col-sm-3 text-center">
+<img src="Combined.png" style="padding-bottom:20px">
+</div>
+</div>
 
 
 </div>
 <div class="container-fluid" id="about">
-<h1  align="center" id="abouthead"><font color="#FFD105">About Us</font></h1>
-<p style="margin-left:610px;margin-top:50px;"id="rcorners4" ></p>
-<p align="center"><font size="5"color="#FFD105">We are a group of sophomores from North Allegheny Intermediate High School with a joint interest in computer science. Our team wanted to create an educational app aiming to teach young children basic physics concepts. The "Star Wars: The Force Simulator" app represents our efforts to meet this objective. We hope you enjoy using our app!</p>
-<p style="margin-left:610px;margin-top:15px;"id="rcorners4" ></p>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="text-center col-sm-4">
+<h1   id="abouthead"><font color="#FFD105">About Us</font></h1>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="text-center col-sm-10">
+<p ><font size="5"color="#FFD105">We are a group of sophomores from North Allegheny Intermediate High School with a joint interest in computer science. Our team wanted to create an educational app aiming to teach young children basic physics concepts. The "Star Wars: The Force Simulator" app represents our efforts to meet this objective. We hope you enjoy using our app!</p>
+</div>
+</div>
+<hr>
+<div class=" row">
 
-<div class="zoom" id="joshc">
-<img src="josh.jpg" style="height:200px;width:230px" align="left"  id="josh" class="image" data-toggle="modal" data-target="#myModal" >
-</div>
+<div class="text-center col-sm-4 ">
+
+<img type="button" src="josh.jpg" style="height:200px;width:230px"  id="josh" class="image zoom" data-toggle="modal" data-target="#myModal" >
+
+
 <p id="joshcaption"><font color="#FFD105">Josh Zhou</font></p>
-<div class="zoom" id="jfc">
-<img src="jiangfeng.jpg" style="height:200px;width:230px;" align="left"  id="jiangfeng" class="image" data-toggle="modal" data-target="#myModal2" >
 </div>
-<p id="jfccaption"><font color="#FFD105">Jiangfeng Chu</font></p>
-<div class="zoom" id="anc">
-<img src="anchey.jpg" style="height:200px;width:230px;" align="left"  id="anchey" class="image" data-toggle="modal" data-target="#myModal3">
+
+<div class="text-center col-sm-4 text-center">
+
+
+<img type="button" src="jiangfeng.jpg" style="height:200px;width:230px;" class="image zoom" id="jiangfeng"  data-toggle="modal" data-target="#myModal2" >
+
+
+<p id="jfcaption"><font color="#FFD105">Jiangfeng Chu</font></p>
 </div>
+
+<div class="text-center col-sm-4 text-center">
+
+<img type="button" src="anchey.jpg" style="height:200px;width:230px;"  id="anchey" class="image zoom" data-toggle="modal" data-target="#myModal3">
+
 <p id="ancheycaption"><font color="#FFD105">Anchey Peng</font></p>
-<div class="zoom" id="aks">
-<img src="akshana.jpg" style="height:200px;width:230px;" align="left"  id="akshana" class="image"data-toggle="modal" data-target="#myModal5">
 </div>
-<p id="akshanacaption"><font color="#FFD105">  Akshana</font></p>
+
+</div>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-3 text-center">
+
+<img type="button" src="akshana.jpg" style="height:200px;width:230px;"  id="akshana" class="image zoom"data-toggle="modal" data-target="#myModal5">
+
+<p id="akshanacaption"><font color="#FFD105">  Akshana </font></p>
 <p id="akshana2caption"><font color="#FFD105"> Dassanaike</font></p>
-<div class="zoom" id="saifc">
-<img src="saif.jpg" style="height:200px;width:230px;" align="left"  id="saif" class="image" data-toggle="modal" data-target="#myModal4">
 </div>
+<div class="col-sm-1"></div>
+<div class="col-sm-3 text-center">
+
+<img type="button" src="saif.jpg" style="height:200px;width:230px;"  id="saif" class="image zoom" data-toggle="modal" data-target="#myModal4">
+
 <p id="saifcaption"><font color="#FFD105">Saif Ali</font></p>
+</div>
+</div>
 <div id="myModal" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
 <div class="modal-dialog">
 
@@ -266,7 +269,7 @@ top:2430px;
         <h4 class="modal-title"><font color="#000000">Programmer, Designer</font></h4>
       </div>
       <div class="modal-body">
-        <p><font color="#000000">Josh loves to code, run, and play basketball in his freetime. He also participates in Computer Club, Model UN, Cross Country, Key Club, and Track and Field. He can code proficiently in Java, HTML, CSS, and C. He also completed the LEAP Summer Camp.</font></p>
+        <p><font color="#000000">Josh Zhou is a sophomore at North Allegheny Intermediate High School. He loves to code, run, and play basketball in his freetime. He also participates in Computer Club, Model UN, Cross Country, Key Club, and Track and Field. He can code proficiently in Java, HTML, CSS, and C. He also completed the LEAP Summer Camp.</font></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
@@ -354,6 +357,12 @@ language is Java</font></p>
   </div>
   </div>
 </div>
+<footer class="container-fluid" id="foot">
+
+<p>©2017 The Swamp. All rights reserved. Designed and Developed by Josh Zhou. <a href="#home">Back to Top</a></p>
+
+
+</footer>
 <script>
   //SMOOTHSCROLLING
 
